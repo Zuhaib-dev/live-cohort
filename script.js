@@ -42,12 +42,24 @@
 // console.groupEnd();
 
 // 6. Declare a const object, modify its properties, and log the updated object.
-const person = {
-  name: "John Doe",
-  age: 30,
-  occupation: "Software Engineer",
-};
-person.name  = 'zuhaib'
-person.age = 17
+// const person = {
+//   name: "John Doe",
+//   age: 30,
+//   occupation: "Software Engineer",
+// };
+// person.name  = 'zuhaib'
+// person.age = 17
 
-console.log(person.name);
+// console.log(person.name);
+// 7. Convert "50" (string) into a number using 3 different methods.
+//  let str = "50"
+//  let num = Number(str)
+//  console.log(num);
+// let str = "50"
+// let num = parseInt(str)
+// console.log(num);
+// let num = +"50"
+// console.log(num);
+
+
+ 
