@@ -14,13 +14,35 @@
 // console.log(typeof true);
 // console.log(typeof null);
 // fourth question . Write a program that swaps the values of two variables.
-let a = 10
-let b = 12
-let c;
-c = a;
-a = b
-b = c
-console.log(a,b);
+// let a = 10
+// let b = 12
+// let c;
+// c = a;
+// a = b
+// b = c
+// console.log(a,b);
+// 5. Use console.group() to organize logs into a group.
+console.group("roadmap for frontend")
+console.log("Learn HTML");
+console.log("Learn CSS");
+console.log("Make Projects ");
+console.log("Learn JavaScript");
+console.log("Learn JavaScript");
+console.log("Learn React.js");
+console.log("Start applying for job");
+console.groupEnd();
+console.groupCollapsed("roadmap for frontend")
+console.log("Learn HTML");
+console.log("Learn CSS");
+console.log("Make Projects ");
+console.log("Learn JavaScript");
+console.log("Learn JavaScript");
+console.log("Learn React.js");
+console.log("Start applying for job");
+console.groupEnd();
+
+
+
 
 
 
