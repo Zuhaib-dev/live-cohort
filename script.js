@@ -4,7 +4,7 @@
 // console.error("Hello World");
 // console.info("Hello World");
 // console.table({log:"Hello world"})
-  
+
 //second question Perform 35 * 2 - (10 / 2) + 7 and log the result.
 // let result = 35 * 2 - (10 / 2) + 7;
 // console.log(result);
@@ -22,28 +22,32 @@
 // b = c
 // console.log(a,b);
 // 5. Use console.group() to organize logs into a group.
-console.group("roadmap for frontend")
-console.log("Learn HTML");
-console.log("Learn CSS");
-console.log("Make Projects ");
-console.log("Learn JavaScript");
-console.log("Learn JavaScript");
-console.log("Learn React.js");
-console.log("Start applying for job");
-console.groupEnd();
-console.groupCollapsed("roadmap for frontend")
-console.log("Learn HTML");
-console.log("Learn CSS");
-console.log("Make Projects ");
-console.log("Learn JavaScript");
-console.log("Learn JavaScript");
-console.log("Learn React.js");
-console.log("Start applying for job");
-console.groupEnd();
+// console.group("roadmap for frontend")
+// console.log("Learn HTML");
+// console.log("Learn CSS");
+// console.log("Make Projects ");
+// console.log("Learn JavaScript");
+// console.log("Learn JavaScript");
+// console.log("Learn React.js");
+// console.log("Start applying for job");
+// console.groupEnd();
+// console.groupCollapsed("roadmap for frontend")
+// console.log("Learn HTML");
+// console.log("Learn CSS");
+// console.log("Make Projects ");
+// console.log("Learn JavaScript");
+// console.log("Learn JavaScript");
+// console.log("Learn React.js");
+// console.log("Start applying for job");
+// console.groupEnd();
 
+// 6. Declare a const object, modify its properties, and log the updated object.
+const person = {
+  name: "John Doe",
+  age: 30,
+  occupation: "Software Engineer",
+};
+person.name  = 'zuhaib'
+person.age = 17
 
-
-
-
-
-
+console.log(person.name);
