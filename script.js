@@ -1,2 +1,6 @@
-let arr = [1,2,3,4,5]
-arr.reduce()
+// first question log to the console by various methods
+console.log("Hello World");
+console.warn("Hello World");
+console.error("Hello World");
+console.info("Hello World");
+console.table({log:"Hello world"})
