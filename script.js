@@ -60,6 +60,20 @@
 // console.log(num);
 // let num = +"50"
 // console.log(num);
+// 8. Check if "JavaScript" contains "Script" without using .includes().
+//  let str = "JavaScript"
+// console.log(str.indexOf('Script'));
+// let str = "javaScript"
+// console.log(str.search('Script'));
+// let str = "javaScript"
+// if(str.indexOf("Script")){
+//     console.log("True");
+    
+// }else{
+//     console.log("False");
+    
+// }
+
 
 
  
