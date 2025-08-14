@@ -6,5 +6,14 @@
 // console.table({log:"Hello world"})
   
 //second question Perform 35 * 2 - (10 / 2) + 7 and log the result.
-let result = 35 * 2 - (10 / 2) + 7;
-console.log(result);
+// let result = 35 * 2 - (10 / 2) + 7;
+// console.log(result);
+//thrid question Log the data type of "123", 123, true, and null using typeof.
+console.log(typeof "123");
+console.log(typeof 123);
+console.log(typeof true);
+console.log(typeof null);
+
+
+
+
