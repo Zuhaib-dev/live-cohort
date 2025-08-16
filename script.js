@@ -1,6 +1,4 @@
-// //15. Use a for...of loop to iterate over the string "JavaScript"
-// let str = "javaScript"
-// for(let char of  str){
-//     console.log(char);
-    
-// }
+// 16. Remove duplicate values from an array
+let arr = [1,2,2,2,3,3,4,56,6,666,6]
+let uniqArr= [...new Set(arr)]
+console.log(uniqArr);
