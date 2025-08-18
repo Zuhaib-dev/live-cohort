@@ -14,19 +14,19 @@
 // let fnGreeter = greeter("Hello");
 // fnGreeter("ZUhaib")
 // 3 Implement a function that takes a callback and only executes it once (HOF + Closure).
-function once(fn, limit) {
-  let total = 0;
-  return function(){
-    if (total < limit) {
-    total++;
-    fn();
-  }
-  }
-}
-let ans = once(function () {
-  console.log("Once Only");
-}, 1);
-ans()
-ans()
-ans()
-ans()
+// function once(fn, limit) {
+//   let total = 0;
+//   return function(){
+//     if (total < limit) {
+//     total++;
+//     fn();
+//   }
+//   }
+// }
+// let ans = once(function () {
+//   console.log("Once Only");
+// }, 1);
+// ans()
+// ans()
+// ans()
+// 4 Implement a function that throttles another function (HOF + Closures).
