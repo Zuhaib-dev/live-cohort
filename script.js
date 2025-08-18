@@ -1,6 +1,7 @@
-let arr = [1,2,3,4,5,6]
-let arr2 = []
-for(let i = arr.length-1;i>=0;i--){
-    arr2.push(arr[i])
-}
-console.log(arr2);
+let arr = [1,1,2,3,4,5,5]
+let obj = {}
+arr.forEach(function(val){
+    obj[val] === undefined ? obj[val] = 1 : obj[val] ++
+})
+console.log(obj);
+
