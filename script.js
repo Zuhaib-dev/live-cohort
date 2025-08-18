@@ -1,13 +1,17 @@
-// Write a function that uses closures to create a counter.
-function counter() {
-  let count = 0;
+function fnLimiter(fn, limit) {
+  let totalCalled = 0;
   return function () {
-    count++;
-    console.log(count);
+    if (totalCalled < limit) {
+      totalCalled++;
+      fn();
+    }
   };
 }
-let makecount = counter();
-makecount()
-makecount()
-makecount()
-makecount()
+let limiter = fnLimiter(function () {
+  console.log("Im in my limits");
+}, 3);
+limiter();
+limiter();
+limiter();
+limiter();
+limiter();
