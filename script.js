@@ -13,5 +13,6 @@ btn.addEventListener("click", function () {
     clearInterval(limiter)
     btn.innerHTML = "Downloaded"
     btn.style.opacity = 0.5
+    grow = 0
   },5000)
 });
