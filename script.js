@@ -1,25 +1,25 @@
 let btn = document.querySelector("button");
 let h5 = document.querySelector("h5");
-let check = 0;
+let checkFriendship = 0;
 btn.addEventListener("click", function () {
-  if (check == 0) {
+  if (checkFriendship == 0) {
     h5.innerHTML = "Request Sending...";
     h5.style.color = "black";
-    btn.innerHTML = "Adding Friend..."
     setTimeout(function(){
-      h5.innerHTML = "Request Accepted"
-      h5.style.color = "black"
+      h5.innerHTML = 'Request Accepted'
+      h5.style.color = 'black'
+      btn.innerHTML = 'Adding Freind'
     },1500)
-    setTimeout(function () {
-      h5.innerHTML = "Friends";
+    setTimeout(() => {
+      h5.innerHTML = "friends";
       h5.style.color = "green";
-      btn.innerHTML = "Remove Friend";
-      check = 1;
+      btn.innerHTML = "Remove Friend ";
+      checkFriendship = 1;
     }, 3000);
   } else {
-    h5.innerHTML = "Stranger";
+    h5.innerHTML = "Strangers";
     h5.style.color = "red";
-    btn.innerHTML = "Add Friend";
-    check = 0;
+    btn.innerHTML = "Add Friend ";
+    checkFriendship = 0;
   }
 });
