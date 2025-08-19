@@ -7,13 +7,11 @@ btn.addEventListener("click", () => {
     grow++;
     persent.innerHTML = grow + "%";
     growth.style.width = grow + "%";
-  }, 40);
-  setTimeout(() => {
+  }, 50);
+  setTimeout(function () {
     clearInterval(limiter);
     btn.innerHTML = "Downloaded";
-    btn.style.color = 'black'
-    btn.style.opacity = "0.3";
-    btn.style.cursor = 'not-allowed'
+    btn.style.opacity = '0.5'
     grow = 0
-  }, 4000);
+  }, 5000);
 });
