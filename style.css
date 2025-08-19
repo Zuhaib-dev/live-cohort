@@ -13,25 +13,23 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.box {
-  background: white;
-  padding: 20px 40px;
-  border-radius: 10px;
-  text-align: center;
-}
-h5 {
-  color: red;
-  margin-bottom: 10px;
-  font-size: 20px;
-}
-h1{
-    color: black;
+  flex-direction: column;
+}#box{
+  height: 250px;
+  width: 250px;
+  background: rgb(50, 200, 200);
+  margin-bottom: 30px;
+  border-radius: 10%;
+  border: 6px solid wheat;
+  
 }
 button{
-    color: black;
-    padding: 10px;
-    border-radius: 13px;
-    background: white;
+  padding: 10px 20px;
+  color: black;
+  font-size: 20px;
+  border-radius: 10px;
+}
+button:active{
+  scale: 0.95;
 }
 
