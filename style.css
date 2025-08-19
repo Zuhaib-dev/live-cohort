@@ -14,22 +14,31 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}#box{
-  height: 250px;
-  width: 250px;
-  background: rgb(50, 200, 200);
-  margin-bottom: 30px;
-  border-radius: 10%;
-  border: 6px solid wheat;
-  
 }
-button{
-  padding: 10px 20px;
-  color: black;
-  font-size: 20px;
+h1 {
+  padding: 20px 40px;
+  background: gainsboro;
   border-radius: 10px;
+  margin: 30px 0;
+  letter-spacing: 5px;
+  font-size: xx-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
 }
-button:active{
+h5 {
+  font-size: 40px;
+  color: white;
+  text-decoration: underline;
+  font-family: cursive;
+}
+button {
+  padding: 20px 20px;
+  font: 40px;
+  font-weight: 500;
+  font-family: monospace;
+  color: black;
+  border-radius: 20px;
+}
+button:active {
   scale: 0.95;
 }
-
