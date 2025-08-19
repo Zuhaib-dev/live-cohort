@@ -1,8 +1,20 @@
-let h1 = document.querySelectorAll("h1");
-h1[0].innerHTML = "The one on zero index";
-h1[0].style.color = 'red'
-h1[1].innerHTML = 'the second on 1 index';
-h1[1].style.color = 'blue'
-h1[2].innerHTML = 'the thrid on 2 index'
-h1[2].style.color = 'seagreen'
-
+let btn = document.querySelector("button");
+let h5 = document.querySelector("h5");
+let flag = 0;
+btn.addEventListener("click", function () {
+  if (flag == 0) {
+    h5.innerHTML = "Friends";
+    h5.style.color = "green";
+    btn.innerHTML = "Remove Friend";
+    console.log("FriendShip Done");
+    
+    flag = 1
+  }else{
+    h5.innerHTML = 'Strangers'
+    h5.style.color = 'red'
+    btn.innerHTML = 'Add Friend'
+    console.log("Removed Friend Susessfully");
+    
+    flag = 0
+  }
+});
