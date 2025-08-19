@@ -1,8 +1,9 @@
-let arr = ['CSK','MI','SRH','RCB','KKR','LSG','PBKS','GT','DC','RR',]
 let btn = document.querySelector('button')
-let h1 = document.querySelector('h1')
-btn.addEventListener('click', function(){
-  let num = Math.floor(Math.random()*arr.length)
-  let winner = arr[num]
-  h1.innerHTML = winner
+let box = document.querySelector('.box')
+btn.addEventListener('click', ()=>{
+  let r = Math.floor(Math.random()*256)
+  let g = Math.floor(Math.random()*256)
+  let b = Math.floor(Math.random()*256)
+  box.style.backgroundColor = `rgb(${r},${g},${b})`
+  
 })
