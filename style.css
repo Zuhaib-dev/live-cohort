@@ -16,3 +16,21 @@ body{
   justify-content: center;
   gap: 40px;
 }
+button{
+  background: rgb(189, 17, 46);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  font-family: cursive;
+  z-index: 1;
+  position: relative;
+}
+button:active{
+  scale: 0.95;
+}
+.image{
+  height: 200px;
+  position: absolute;
+
+}

@@ -1,7 +1,17 @@
-let img = document.createElement("img");
-img.setAttribute(
-  "src",
-  "https://images.unsplash.com/photo-1755381370462-45f9a5846000?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxOXx8fGVufDB8fHx8fA%3D%3D"
-);
-img.style.height = '300px'
-document.body.appendChild(img)
+let btn = document.querySelector("button");
+let body = document.querySelector("body");
+btn.addEventListener("click", function () {
+  let x = Math.random()*90
+  let y = Math.random()*90
+  let rot = Math.random()*360
+  let img = document.createElement("img");
+  img.setAttribute(
+    "src",
+    "https://pngimg.com/uploads/autumn_leaves/small/autumn_leaves_PNG3610.png"
+  );
+  img.setAttribute('class','image')
+  document.body.appendChild(img);
+  img.style.left = x+"%"
+  img.style.top = y+"%"
+  img.style.rotate = rot+'deg'
+});
