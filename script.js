@@ -7,11 +7,12 @@ btn.addEventListener("click", function () {
   let img = document.createElement("img");
   img.setAttribute(
     "src",
-    "https://pngimg.com/uploads/autumn_leaves/small/autumn_leaves_PNG3610.png"
+    "https://pngimg.com/uploads/call_of_duty/small/call_of_duty_PNG77.png"
   );
-  img.setAttribute('class','image')
-  document.body.appendChild(img);
-  img.style.left = x+"%"
-  img.style.top = y+"%"
+  img.style.height = '200px'
+  img.style.position = 'absolute'
+  img.style.left = x+'%'
+  img.style.top = y+'%'
   img.style.rotate = rot+'deg'
+  document.body.appendChild(img)
 });

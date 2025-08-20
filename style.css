@@ -28,9 +28,5 @@ button{
 }
 button:active{
   scale: 0.95;
-}
-.image{
-  height: 200px;
-  position: absolute;
 
 }
