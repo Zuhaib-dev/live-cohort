@@ -1,11 +1,7 @@
-let img1 = document.querySelector("#img1");
-let img2 = document.querySelector("#img2");
-let btn = document.querySelector("button");
-btn.addEventListener("click", function () {
-  setInterval(function () {
-    let img1Src = img1.getAttribute("src");
-  let img2Src = img2.getAttribute("src");
-  img1.setAttribute('src',img2Src)
-  img2.setAttribute('src',img1Src)
-  }, 1000);
-});
+let img = document.createElement("img");
+img.setAttribute(
+  "src",
+  "https://images.unsplash.com/photo-1755381370462-45f9a5846000?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxOXx8fGVufDB8fHx8fA%3D%3D"
+);
+img.style.height = '300px'
+document.body.appendChild(img)
