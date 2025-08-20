@@ -1,17 +1,10 @@
+let img1 = document.querySelector("#img1");
+let img2 = document.querySelector("#img2");
 let btn = document.querySelector("button");
-let persent = document.querySelector("#persent");
-let growth = document.querySelector("#growth");
-let grow = 0;
-btn.addEventListener("click", () => {
-  let limiter = setInterval(() => {
-    grow++;
-    persent.innerHTML = grow + "%";
-    growth.style.width = grow + "%";
-  }, 50);
-  setTimeout(function () {
-    clearInterval(limiter);
-    btn.innerHTML = "Downloaded";
-    btn.style.opacity = '0.5'
-    grow = 0
-  }, 5000);
+btn.addEventListener("click", function () {
+  img1Src = img1.getAttribute("src");
+  img2Src = img2.getAttribute("src");
+  console.log(img1);
+  img1.setAttribute("src", img2Src);
+  img2.setAttribute("src", img1Src);
 });
