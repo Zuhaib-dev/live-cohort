@@ -2,9 +2,10 @@ let img1 = document.querySelector("#img1");
 let img2 = document.querySelector("#img2");
 let btn = document.querySelector("button");
 btn.addEventListener("click", function () {
-  img1Src = img1.getAttribute("src");
-  img2Src = img2.getAttribute("src");
-  console.log(img1);
-  img1.setAttribute("src", img2Src);
-  img2.setAttribute("src", img1Src);
+  setInterval(function () {
+    let img1Src = img1.getAttribute("src");
+  let img2Src = img2.getAttribute("src");
+  img1.setAttribute('src',img2Src)
+  img2.setAttribute('src',img1Src)
+  }, 1000);
 });
