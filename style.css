@@ -10,13 +10,13 @@ body {
   height: 100%;
   width: 100%;
 }
-body{
+body {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 40px;
 }
-button{
+button {
   background: rgb(189, 17, 46);
   padding: 10px 20px;
   border: none;
@@ -26,7 +26,6 @@ button{
   z-index: 1;
   position: relative;
 }
-button:active{
+button:active {
   scale: 0.95;
-
 }
