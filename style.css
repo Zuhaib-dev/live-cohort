@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: white;
+  color: black;
 }
 html,
 body {
@@ -12,20 +12,28 @@ body {
 }
 body {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   gap: 40px;
+  padding: 20px;
+  flex-wrap: wrap;
 }
-button {
-  background: rgb(189, 17, 46);
-  padding: 10px 20px;
-  border: none;
-  border-radius: 8px;
-  font-size: 20px;
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+h1 {
   font-family: cursive;
-  z-index: 1;
-  position: relative;
 }
-button:active {
-  scale: 0.95;
+h5{
+  font-size: 20px;
+  margin-bottom: 5px;
 }
