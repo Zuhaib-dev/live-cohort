@@ -8,4 +8,21 @@ body {
   height: 100%;
   width: 100%;
   background-color: black;
+  gap: 20px;
+  
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button{
+  padding: 10px 20px;
+  background: rgb(233, 8, 45);
+  color: white;
+  border-radius: 6px;
+  border: none;
+}
+button:active{
+  scale: 0.95;
 }
