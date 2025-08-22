@@ -1,4 +1,6 @@
-function fakeApiCall(endpoint) {
+let btn = document.querySelector('#btn1')
+btn.addEventListener('dblclick', function(){
+    function fakeApiCall(endpoint) {
   const data = {
     users: ["Zuhaib", "Murtaza"],
     posts: ["The Epic Shit", "The Wealth"],
@@ -19,4 +21,6 @@ fakeApiCall('posts')
 .then(function(data){
     console.log(data);
     
+})
+
 })
