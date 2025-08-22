@@ -1,16 +1,22 @@
 function getUser() {
   return new Promise((resolve, reject) => {
-    resolve({ id: 1, name: "Zuhaib" });
+    setTimeout(function () {
+      resolve({ id: 1, name: "Zuhaib" });
+    }, 1000);
   });
 }
-function getPosts() {
+function getPosts(userId) {
   return new Promise((resolve, reject) => {
-    resolve(["title 1", "title 2"]);
+    setTimeout(function () {
+      resolve(["Title 1 ", "Title 2"]);
+    }, 1000);
   });
 }
-function getComments(postId) {
+function getCommments(postId) {
   return new Promise((resolve, reject) => {
-    resolve(["greate post", "lovely"]);
+    setTimeout(function () {
+      resolve(["lovely Posts", "Amazinging Content", "niCe"]);
+    }, 1000);
   });
 }
 getUser()
@@ -20,11 +26,13 @@ getUser()
   })
   .then(function (titles) {
     console.log(titles);
-    return getComments("saca")
-      .then(function (cmts) {
-        console.log(cmts);
-      })
-      .finally(function () {
-        console.log("ALL resolved");
-      });
-  });
+    return getCommments("dbbb");
+  })
+  .then(function(cmts){
+    console.log(cmts);
+    
+  })
+  .finally(function(){
+    console.log("All ressolved");
+    
+  })
