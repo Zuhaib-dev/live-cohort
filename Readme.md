@@ -1,1 +1,1 @@
-will rise 
+will rise inshallah
